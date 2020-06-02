@@ -50,6 +50,8 @@ export class MainComponent implements OnInit {
     url: ""
   };
 
+  paginationIndexes = [1, 2, 3];
+
   constructor() {}
 
   ngOnInit(): void {}
@@ -57,5 +59,14 @@ export class MainComponent implements OnInit {
   setModalInfo(e) {
     this.modalInfo.name = e.name;
     this.modalInfo.url = e.url;
+  }
+
+  changePokemons() {
+    this.pokemons = [
+      {
+        name: "Jigglypuff",
+        url: "https://image.flaticon.com/icons/svg/188/188993.svg"
+      }
+    ];
   }
 }
