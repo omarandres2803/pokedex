@@ -1,0 +1,11 @@
+<div class="card-deck">
+    <div class="card p-5 mt-5 HoverZoom" style="min-width: 18rem;" *ngFor="let pokemon of pokemons">
+        <img class="card-img-top" [src]="pokemon.url" height="100" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title stretched-link text-center">{{ pokemon.name }}</h5>
+            <p class="card-text text-center">This card has supporting text below as a natural lead-in to additional
+                content.</p>
+            <a href="#" class="stretched-link">More Details</a>
+        </div>
+    </div>
+</div>
