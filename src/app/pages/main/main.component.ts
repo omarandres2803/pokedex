@@ -45,7 +45,17 @@ export class MainComponent implements OnInit {
     }
   ];
 
+  modalInfo = {
+    name: "",
+    url: ""
+  };
+
   constructor() {}
 
   ngOnInit(): void {}
+
+  setModalInfo(e) {
+    this.modalInfo.name = e.name;
+    this.modalInfo.url = e.url;
+  }
 }
